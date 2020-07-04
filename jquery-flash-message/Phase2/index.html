@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Flashy Plugin Example</title>
+    <link rel="stylesheet" type="text/css" href="css/flashy.min.css">
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+	<style type="text/css">
+		li button {
+			padding: 10px;
+			background: transparent;
+			border: 1px solid #ddd;
+			border-radius: 2px;
+			font-size: 15px;
+		}
+
+		ul li{
+			margin-bottom: 10px;
+		}
+	</style>
+  </head>
+  <body>
+ <header class="intro">
+ <h1> jQuery Flashy Plugin Example </h1>
+ <p> flashy.js a jQuery plugin.</p>
+ <p> Written in HTML, CSS, JavaScript (jQuery)... </p>
+ <div class="action">
+ <a href="https://www.codehim.com/others/jquery-flash-message-box-to-show-notifications/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+ <a href="https://github.com/zonkedcode/flashy" title="View, Fork or Star on GitHub" class="btn github">View on GitHub</a>
+ </div>
+ 
+ </header>
+  
+ <main>
+  <article>
+  <p>The following is the example of target keyword. </p>
+   <h2> jQuery Flashy Plugin Example </h2>
+ 
+  	<div class="flashy_demo">
+		<p>
+			<ul>
+				<li>
+					<button class="flashy__success">To click with flashy__success</button>
+				</li>
+				<li>	
+					<button class="flashy__danger">To click with flashy__danger</button>					
+				</li>
+				<li>	
+					<button class="flashy__warning">To click with flashy__warning</button>					
+				</li>
+			</ul>
+		</p>
+	</div>
+  
+  
+  </article>
+ </main>
+ 
+  <footer class="credit">Author: Chris - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="js/flashy.min.js"></script>
+ <script>
+		$('.flashy__success').click(function() {
+			flashy('Flasher your users with flashy', {
+				type : 'flashy__success'
+			});
+		});
+
+		$('.flashy__danger').click(function() {
+			flashy('Flasher your users with flashy', {
+				type : 'flashy__danger'
+			});
+		});
+
+		$('.flashy__warning').click(function() {
+			var d = flashy('Flasher your users with flashy', {
+				type : 'flashy__warning',
+				stop : true
+			});
+		});
+	</script>
+  </body>
+</html>
