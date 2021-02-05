@@ -1,15 +1,9 @@
-<!--
- *  notify-bootstrap 
- *  v1.0.0
- *  https://github.com/the-muda-organization/notify-bootstrap
- *  MIT License
--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Bootstrap Notify Examples</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/notify.min.css">
     
@@ -17,52 +11,6 @@
 <body class="vh-100" style="background:url(https://i.imgur.com/99r3MBm.jpg) center/cover no-repeat fixed">
 
 <main class="container-fluid text-warning py-5 text-center" style="background:rgba(0,0,0,.5)">
-    <section class="row mb-4 pb-4 border-bottom border-warning text-left">
-        <div class="col-12 mb-5 text-center">
-            <h1 class="h2">Notify for Bootstrap</h1>
-            <div>Show notifications anywhere in your app</div>
-        </div>
-        
-        <div class="col-lg-3 mb-5">
-            <div class="mb-2">Show a notification using:</div>
-            <div class="alert alert-primary py-1"><pre class="m-0"><code>notify(type, title, message);</code></pre></div>
-        </div>
-        
-        <div class="col-lg-3 mb-5">
-            <div class="mb-2">Example with jQuery:</div>
-            <div class="alert alert-primary py-1">
-<pre class="m-0"><code>$('#btn-test').on('click',function(){
-    notify('bell','Title of the message!','This is a sample message! Lorem ipsum!');
-});</code></pre></div>
-            <button id="btn-test" class="btn btn-sm btn-block btn-primary">Click Me!</button>
-        </div>
-        
-        <div class="col-lg-3 mb-5">
-            <div class="mb-2">Example with javascript:</div>
-            <div class="alert alert-primary py-1">
-<pre class="m-0"><code>myElement.addEventListener('click',function(){
-    notify('shield-check','Title of the message!','This is a sample message! Lorem ipsum!');
-});</code></pre></div>
-            <button id="btn-test2" class="btn btn-sm btn-block btn-primary">Click Me!</button>
-        </div>
-        
-        <div class="col-lg-3 mb-5 text-dark">
-            <div class="mb-2 text-warning">Notify is independent of origal Bootstrap toast:</div>
-            <div id="toast-test" class="toast" data-autohide="false" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                    <strong class="mr-auto"><i class="fab fa-lg fa-facebook-square mr-2" style="width:20px;height:20px;color:#4267B2"></i>Facebook</strong>
-                    <small class="txt-muted">just now</small>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">
-                            <svg class="svg-inline--fa fa-times fa-w-11 fa-fw fa-xs" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg=""><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-                        </span>
-                    </button>
-                </div>
-                <div class="toast-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            </div>
-            
-        </div>
-    </section>
     
     <section class="row mb-4 pb-4 border-bottom border-warning">
         <div class="col-12 mb-4"><h2 class="h3 m-0">GENERAL:</h2></div>
@@ -90,7 +38,6 @@
         <div class="col-12 mb-4"><h3 class="h3 m-0">CUSTOM:</h3><small>(independent of Font Awesome)</small></div>
         <div class="col-lg-1 mb-3"><button class="btn btn-block btn-outline-light" onclick="notify('spinner','Please Wait','Your request is being processed.');"><i class="fas fa-2x fa-spinner fa-spin"></i></button>spinner</div>
     </section>
-
 
     <section class="row mb-4 border-bottom border-warning">
         <div class="col-12 mb-4"><h3 class="h3 m-0">FONT AWESOME:</h3><small>(All Font Awesome icons can be used. These few icons are for demo  purpose)</small></div>
@@ -126,17 +73,7 @@
         <div class="col-lg-1 mb-3"><button class="btn btn-block btn-outline-warning" onclick="notify('trophy-alt',          'Sample Message','This is a sample message.');"><i class="fas fa-2x fa-trophy-alt"></i></button></div>
     </section>
     
-    <!--
-    <section class="row mb-4 border-bottom border-warning">
-        <div class="col-12">
-            <div class="col-12 mb-4"><h3 class="h3 m-0">LOREM IPSUM:</h3></div>
-    
-        </div>
-    </section>
-    -->
-    
 </main>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -149,11 +86,9 @@
                                     DEMO
 *******************************************************************************/
 $('#toast-test').toast('show');
-
 $('#btn-test').on('click',function(){
     notify('bell','Title of the message!','This is a sample message! Lorem ipsum!');
 });
-
 var myElement = document.getElementById('btn-test2');
 myElement.addEventListener('click',function(){
     notify('shield-check','Title of the message!','This is a sample message! Lorem ipsum!');
